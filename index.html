@@ -7,7 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,500;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="static/scripts.js" type="text/javascript"></script>
+    
     <title>Sergio García López's WebSite</title>
 </head>
 <body>
@@ -38,9 +44,9 @@
 
             <ul>
 
-                <li><a href="">About</a></li>
-                <li><a href="">Portofolio</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
 
             </ul>
 
@@ -61,21 +67,102 @@
 
         </nav>
 
+        <nav class="about" id="about">
+
+            <nav class="mainabout">
+
+                <div class="mainabout container">
+
+                        <h1>Sergio García López</h1>
+                        <p>I'm a Full-Stack Software developer based in Spain &#x1F1EA;&#x1F1F8;</p>
+                        <p style="width: 30dvw; margin: 0 auto; text-align: justify;">I have been coding non-stop since 
+                            <span style="font-family: 'playfair Display'; font-weight: bold; font-size: 1.1dvw">4 Years ago</span> when I started learning 
+                            <span style="font-family: 'playfair Display'; font-weight: bold; font-size: 1.1dvw">Front-End and Python</span>.
+                            Also, Data Analysis and Relational and Non-Relational databases have been around me for several time, and being really honest, 
+                            <span style="font-family: 'playfair Display'; font-weight: bold; font-size: 1.1dvw"> I just love them;</span>
+                        </p>
+                        <img src="img/Vector 1.png">
+
+                </div>
+
+            </nav>
+
+        </nav>
+
+        <nav class="portofolio" id="portofolio">
+
+            <nav class="portofolio title">
+
+                <h1>Portofolio;</h1>
+
+            </nav>
+
+            <nav class="portofolio boxes">
+
+                <div class="box">
+
+                    <div class="box textbox">
+
+                        <h1>Global Data</h1>
+                        <p>Global Data brings one of the most large <span style="font-family: Playfair Display; font-style: italic; font-weight: bold;">datasets</span> into a web-app, and, this database is: <a href="https://datacatalog.worldbank.org/search/dataset/0037712" 
+                            style="font-family: Playfair Display; font-style: italic; font-weight: bold; color: white; text-decoration: none; font-size: 1.5dvw;">WorldData</a>.
+                            <br>It is a World Development Indicators Database, and it is HUGE.</p>
+
+                    </div>
+
+                    <hr style="margin-left: 4dvw; background-image: linear-gradient(-45deg, #ee0979, #ff6a00); width: 4px;  border: none;">
+
+                    <div class="boxtitle">
+
+                        <h1><a href="https://globaldata.onrender.com">Global Data</a></h1>
+                        <p style="color: white; font-style: italic; font-weight: 200; font-family: Playfair Display;">(It could take some time to load due to slow hosting services)</p>
+
+                    </div>
+
+                </div>
+
+                <hr class="boxseparator" style="margin-left: 4dvw; background-image: linear-gradient(-90deg, #ee0979, #ff6a00); height: 4px; border: none;">
+                
+                <div class="comingsoonbox">
+
+                    <div class="comingsoon">
+
+                        <h1>Coming Soon...</h1>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <nav id="contact" class="contactform">
+
+                <nav class="behind">
+
+
+
+                </nav>
+
+                <nav class="contactcontainer">
+
+                    <form action="">
+
+                        <h1 style="color: white;">Contact</h1>
+
+                        <input type="text" id="name">
+                        <input type="text" id="maintext">
+
+                    </form>
+
+                </nav>
+
+            </nav>
+
+        </nav>
+
     </main>
 
 </body>
-
-
-
-<script>
-    var typed = new Typed('#mainbig', {
-      strings: ['Sergio García López ^2000', 'SergioSoftDev ^2000'],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true,
-      smartBackspace: true
-    });
-</script>
 
 
 </html>
