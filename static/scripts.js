@@ -11,5 +11,6 @@ addEventListener("DOMContentLoaded", (event) => {
     ScrollReveal().reveal('.about', {duration: 2000, reset: true, interval: 10});
     ScrollReveal().reveal(".portofolio", {duration: 2000, reset: true, interval: 10})
     ScrollReveal().reveal("#circle3", {duration: 6000, reset: true, interval: 10})
+    ScrollReveal().reveal(".cv", {duration: 2000, reset: true, interval: 10})
 
 });

@@ -34,7 +34,7 @@ html{
 
     overflow-x: hidden;
     max-width: 100dvw;
-    max-height: 300dvh;
+    max-height: 400dvh;
     scroll-behavior: smooth;
 
 }
@@ -346,11 +346,14 @@ body{
 
     position: absolute;
 
-    height: 100dvh;
+    height: 100vh;
     width: auto;
 
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
 
     top: 100dvh;
     left: 93dvw;
@@ -366,8 +369,8 @@ body{
 
 .aboutobjects > #circle6, #circle8{
 
-    width: 10dvw;
-    height: 10dvw;
+    width: 16dvh;
+    height: 16dvh;
 
     background-image: linear-gradient(-45deg, #ee0979, #ff6a00);
 
@@ -565,6 +568,190 @@ body{
     margin-block-end: 0;
 
 }
+
+
+
+
+/* CV  */
+
+
+.cv{
+
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cv > .self{
+
+    width: 40%;
+
+}
+
+.cv > .self img{
+
+    height: 80dvh;
+    border-radius: 1dvw;
+
+}
+
+.cv > .download{
+
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+
+    border-radius: 2dvw;
+
+}
+
+
+.cv > .download a{
+
+    width: 10dvw;
+    height: 5dvh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+
+    border-radius: 2dvw;
+
+    text-decoration: none;
+
+    background-image: linear-gradient(-45deg, #ee0979, #ff6a00);
+
+    transition: .5s;
+
+}
+
+.cv > .download a:hover{
+
+    width: 12dvw;
+
+}
+
+.cv > #second{
+
+    background-image: none;
+
+    width: 12dvw;
+    margin-top: 3dvh;
+
+    display: flex;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: white;
+
+
+    justify-content: center;
+    align-items: center;
+
+    transition: .5s;
+
+}
+
+.cv > #second:hover{
+
+    width: 14dvw;
+
+}
+
+
+.cv > #second a{
+
+    color: white;
+    background: none;
+    border-radius: 2dvw;
+
+}
+
+
+.cv > .background{
+
+    position: absolute;
+
+    z-index: -1;
+
+    width: 100dvw;
+    height: 100dvh;
+
+}
+
+.background > #circle1{
+
+    position: absolute;
+
+    width: 30dvw;
+    height: 30dvw;
+
+    border-radius: 50%;
+
+    background-image: linear-gradient(-45deg, #ee0979, #ff6a00);
+
+    margin-top: 50dvh;
+    margin-left: -15dvw;
+
+    opacity: 20%;
+
+    scale: 1;
+
+    transition: 10s ease-in-out;
+
+}
+
+.cv:hover #circle1{
+
+    scale: 1.5;
+
+}
+
+
+.background #circle2{
+
+    position: absolute;
+
+    top: -20dvh;
+    left: 90dvw;
+
+    width: 40dvw;
+    height: 40dvw;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 15%;
+
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+
 
 .contactform{
     
