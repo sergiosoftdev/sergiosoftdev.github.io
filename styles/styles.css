@@ -24,13 +24,14 @@
 body{
 
     background-color: var(--background-color);
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     font-family: 'Roboto';
     color: var(--main-text-color);
     padding: 50px;
     border-left: 1px solid var(--secondary-background-color);
     border-right: 1px solid var(--secondary-background-color);
+    box-sizing: border-box;
 
 }
 
@@ -42,6 +43,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 200px;
+    gap: 20px;
+    box-sizing: border-box;
 
 }
 
@@ -64,6 +67,9 @@ body{
 .header-wrapper > .info-wrapper{
 
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
 
@@ -77,8 +83,8 @@ body{
 .header-wrapper > .info-wrapper > p{
 
     font-size: 22px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 5px;
     color: var(--secondary-text-color);
 
 }
@@ -236,7 +242,7 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
-    height: 50px;
+    height: auto;
 
 }
 
@@ -268,7 +274,7 @@ body{
 #linkedin{
 
     border: none;
-    margin-top: 10px;
+
 }
 
 #linkedin::after{
@@ -290,7 +296,6 @@ body{
 #github{
 
     border: none;
-    margin-top: 10px;
 
 }
 
@@ -345,5 +350,83 @@ body{
     margin-left: 0;
     width: 30px;
     height: 30px;
+
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .header-wrapper{
+
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+        text-align: center;
+    
+    }
+    
+    .header-wrapper > .info-wrapper{
+    
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 10px;
+    
+    }
+    
+    .header-wrapper > .info-wrapper > h1{
+    
+        font-size: 1.5em;
+    
+    }
+    
+    .header-wrapper > .info-wrapper > p{
+    
+        font-size: 1.2em;
+
+    }
+
+    .icons{
+
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+    
+    }
+
+    .section-title{
+
+        text-align: center;
+
+    }
+
+    .portofolio-card{
+
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .portofolio-card .preview{
+        
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .portofolio-card .info{
+
+        width: 100%;
+        height: 50%;
+        text-align: center;
+
+    }
+
+    .portofolio-card .info .technologies img{
+
+        width: 25px;
+        height: 25px;
+
+    }
 
 }
